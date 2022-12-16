@@ -7,6 +7,7 @@ namespace FileIO222Batch
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to File IO operations programs");
+            FileOperations.FileExist();
         }
     }
 }
