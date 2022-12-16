@@ -31,6 +31,8 @@ namespace FileIO222Batch
             string[] lines;
             lines=File.ReadAllLines(path);
             Console.WriteLine("Total no.of lines are :"+lines.Length);
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
         }
     }
 }
