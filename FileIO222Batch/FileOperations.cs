@@ -24,5 +24,13 @@ namespace FileIO222Batch
                 Console.WriteLine("File not exixt");
             }
         }
+
+        public static void ReadAllLines()
+        {
+            string path = @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\DemoFile.txt";
+            string[] lines;
+            lines=File.ReadAllLines(path);
+            Console.WriteLine("Total no.of lines are :"+lines.Length);
+        }
     }
 }
