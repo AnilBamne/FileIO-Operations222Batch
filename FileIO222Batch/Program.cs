@@ -34,6 +34,7 @@ namespace FileIO222Batch
                             FileOperations.ReadFromStreamReader();
                             break;
                         case 7:
+                            FileOperations.WriteUsingStreamWriter();
                             break;
                         case 8:
                             break;

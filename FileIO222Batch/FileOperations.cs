@@ -79,7 +79,19 @@ namespace FileIO222Batch
                 while((s=sr.ReadLine()) != null)
                 {
                     Console.WriteLine(s);
+                    sr.Close();     //closing the stream to relese the occupied memory
                 }
+            }
+        }
+
+        public static void WriteUsingStreamWriter()
+        {
+            string path = @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\DemoFile.txt";
+            using(StreamWriter sw = File.AppendText(path))
+            {
+                sw.WriteLine("*** This line is writen by the help of Stream Writer ***");
+                sw.Close();     //closing the stream to relese the occupied memory
+                Console.WriteLine(File.ReadAllText(path));
             }
         }
     }
