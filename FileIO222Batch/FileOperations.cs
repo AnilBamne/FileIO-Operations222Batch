@@ -59,5 +59,12 @@ namespace FileIO222Batch
             //copying
             File.Copy(sourcePath, destPath);
         }
+
+        public static void DeleteFile()
+        {
+            string path = @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\CopyDemoFile.txt";
+            //deleting file
+            File.Delete(path);
+        }
     }
 }
