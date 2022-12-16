@@ -66,5 +66,21 @@ namespace FileIO222Batch
             //deleting file
             File.Delete(path);
         }
+
+        /// <summary>
+        /// Stream Reader class
+        /// </summary>
+        public static void ReadFromStreamReader()
+        {
+            string path = @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\DemoFile.txt";
+            using(StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while((s=sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+        }
     }
 }
