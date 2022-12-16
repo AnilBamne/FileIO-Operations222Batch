@@ -11,7 +11,7 @@ namespace FileIO222Batch
             {
                 try
                 {
-                    Console.WriteLine("\nChoose option\n1:File Exist\n2:Read all lines\n3:Read all text\n4:Copy");
+                    Console.WriteLine("\nChoose option\n1:File Exist\n2:Read all lines\n3:Read all text\n4:Copy file\n0:Exit loop");
                     int option = int.Parse(Console.ReadLine());
                     switch (option)
                     {
@@ -25,10 +25,11 @@ namespace FileIO222Batch
                             FileOperations.ReadAllText();
                             break;
                         case 4:
+                            FileOperations.CopyFile();
                             break;
                         case 5:
                             break;
-                        case 6:
+                        case 0:
                             //to exit of loop
                             Environment.Exit(0);
                             break;

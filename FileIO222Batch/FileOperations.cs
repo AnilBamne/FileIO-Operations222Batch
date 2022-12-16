@@ -48,5 +48,16 @@ namespace FileIO222Batch
             line = File.ReadAllText(path);
             Console.WriteLine(line);
         }
+
+        /// <summary>
+        /// Copy method
+        /// </summary>
+        public static void CopyFile()
+        {
+            string sourcePath = @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\DemoFile.txt";
+            string destPath= @"C:\Users\HP\Desktop\RFP222\FileIO222Batch\FileIO222Batch\CopyDemoFile.txt";
+            //copying
+            File.Copy(sourcePath, destPath);
+        }
     }
 }
