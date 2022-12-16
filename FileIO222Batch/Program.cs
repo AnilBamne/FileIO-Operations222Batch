@@ -22,8 +22,15 @@ namespace FileIO222Batch
                             FileOperations.ReadAllLines();
                             break;
                         case 3:
+                            FileOperations.ReadAllText();
                             break;
                         case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            //to exit of loop
+                            Environment.Exit(0);
                             break;
                     }
                 }
